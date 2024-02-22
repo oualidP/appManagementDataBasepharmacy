@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="Apane" fx:id="Apane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="424.0" prefWidth="740.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <Text fill="WHITE" layoutX="15.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Utilisateur" textAlignment="CENTER" wrappingWidth="98.13671875">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="15.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mot de passe" wrappingWidth="113.13671875">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtuser" layoutX="136.0" layoutY="130.0" prefHeight="34.0" prefWidth="197.0" promptText="Saisi le nom de utilisateur" />
+      <Button fx:id="btn" ellipsisString="" layoutX="86.0" layoutY="236.0" mnemonicParsing="false" onAction="#btnValider" onMouseEntered="#btnEntre" onMouseExited="#btnSortie" prefHeight="34.0" prefWidth="271.0" stylesheets="@application.css" text="Valider" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="117.0" fitWidth="175.0" layoutX="172.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image2.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="panecover" layoutX="52.0" layoutY="314.0" prefHeight="28.0" prefWidth="189.0" stylesheets="@application.css" />
+      <PasswordField fx:id="txtpasse" layoutX="136.0" layoutY="183.0" prefHeight="34.0" prefWidth="197.0" promptText="Saisi mot de passe" />
+   </children>
+</AnchorPane>

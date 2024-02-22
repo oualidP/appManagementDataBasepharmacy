@@ -1,0 +1,8 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.panecover{
+	-fx-background-color: rgb(101, 180, 180);
+}
+.btn{
+	
+	-fx-text-fill: rgb(78, 158, 158);
+}

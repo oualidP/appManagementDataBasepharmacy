@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="485.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.affichercController">
+   <children>
+      <Button fx:id="btnAfficher" layoutX="496.0" layoutY="75.0" mnemonicParsing="false" onMouseClicked="#afficher" prefHeight="39.0" prefWidth="205.0" text="Afficher les commandes">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableAfficher" layoutY="175.0" prefHeight="263.0" prefWidth="715.0">
+        <columns>
+          <TableColumn fx:id="colnumero" prefWidth="41.0" text="N°" />
+          <TableColumn fx:id="colDate" prefWidth="94.0" text="Date" />
+            <TableColumn fx:id="colNom" prefWidth="101.0" text="Nom de produit" />
+            <TableColumn fx:id="colUtilisation" prefWidth="92.0" text="Peremption" />
+            <TableColumn fx:id="colRaison" prefWidth="101.0" text="Raison Social" />
+            <TableColumn fx:id="colForme" prefWidth="88.0" text="Forme" />
+            <TableColumn fx:id="colType" prefWidth="94.0" text="Type" />
+            <TableColumn fx:id="colPPV" prefWidth="55.0" text="PPV" />
+            <TableColumn fx:id="colStock" prefWidth="48.0" text="Stock" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="date1" layoutX="335.0" layoutY="75.0" prefHeight="39.0" prefWidth="134.0" promptText=" Saisi un date" />
+      <DatePicker fx:id="date2" layoutX="117.0" layoutY="75.0" prefHeight="39.0" prefWidth="134.0" promptText="Saisi un date" />
+      <Text layoutX="55.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A" wrappingWidth="13.740234375">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="278.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="de">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnVide" layoutX="283.0" layoutY="446.0" mnemonicParsing="false" onMouseClicked="#ViderTable" prefHeight="25.0" prefWidth="177.0" text="Vider le table">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

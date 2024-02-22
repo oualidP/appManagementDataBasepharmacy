@@ -1,0 +1,11 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.VBproduit{
+	
+	-fx-background-color: rgb(255, 0, 128);
+}
+.txt{
+	-fx-padding:10px 10px 10px 10px;
+	-fx-font-size:18px;
+	-fx-border-width:4px;
+	
+}

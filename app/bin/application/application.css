@@ -1,0 +1,12 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#Apane{
+-fx-background-image:url('file:///C:/Users/walid/eclipse-workspace/projet_FE/src/application/image1.jpg');
+
+}
+#btn{
+	-fx-background-color:rgb(255, 255, 255);
+	-fx-text-fill: rgb(101, 180, 180);
+}
+#panecover{
+	-fx-background-color: rgb(101, 180, 180);
+}

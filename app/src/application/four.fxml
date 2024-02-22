@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="490.0" styleClass="panecover" stylesheets="@NewFile3.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.fourController">
+   <children>
+      <TableView fx:id="tableFour" layoutX="-3.0" layoutY="256.0" prefHeight="136.0" prefWidth="496.0">
+        <columns>
+          <TableColumn fx:id="colReseau" prefWidth="117.0" text="Reseau Social" />
+          <TableColumn fx:id="colAdresse" prefWidth="132.0" text="Adresse" />
+            <TableColumn fx:id="colNumero" prefWidth="130.0" text="Numero de telephone" />
+            <TableColumn fx:id="colEmail" prefWidth="116.0" text="Email" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutY="1.0" prefHeight="255.0" prefWidth="490.0" styleClass="panecover" stylesheets="@NewFile3.css">
+         <children>
+            <VBox layoutX="268.0" layoutY="10.0" prefHeight="245.0" prefWidth="188.0" spacing="20.0" styleClass="panecover" stylesheets="@NewFile3.css">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <TextField fx:id="textSocial" promptText="Saisi le nom de sociéte" />
+                  <TextField fx:id="textAdress" promptText="Saisi l'adresse" />
+                  <TextField fx:id="textNumero" promptText="Saisi le numero de telephone" />
+                  <TextField fx:id="textEmail" promptText="Saisi Email" />
+               </children>
+            </VBox>
+            <VBox layoutX="53.0" layoutY="10.0" prefHeight="245.0" prefWidth="173.0" spacing="20.0" styleClass="panecover" stylesheets="@NewFile3.css">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Raison Sociale" wrappingWidth="108.13671875">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#fffefe" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse" wrappingWidth="108.13671875">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#fffdfd" strokeType="OUTSIDE" strokeWidth="0.0" text="Numer de telephone " wrappingWidth="152.13671875">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" wrappingWidth="108.13671875">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnAjouter" layoutX="8.0" layoutY="415.0" mnemonicParsing="false" onMouseClicked="#AjouterFour" prefHeight="40.0" prefWidth="152.0" styleClass="btn" text="Ajouter">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnmodifier" layoutX="180.0" layoutY="417.0" mnemonicParsing="false" onMouseClicked="#modifierfour" prefHeight="40.0" prefWidth="144.0" styleClass="btn" text="Modifier">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSvg" layoutX="342.0" layoutY="417.0" mnemonicParsing="false" onMouseClicked="#SauvegarderFour" prefHeight="40.0" prefWidth="144.0" styleClass="btn" text="Sauvegarder">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
